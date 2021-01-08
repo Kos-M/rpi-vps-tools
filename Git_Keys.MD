@@ -24,7 +24,7 @@ Host got
   IdentitiesOnly yes
 
 
-Host gott
+Host <Custom Host>
   HostName 10.10.1.1
   User git
   IdentityFile ~/.ssh/id_rsa
