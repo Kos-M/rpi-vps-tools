@@ -27,3 +27,4 @@ $ git push
 ```
 
 You should not be asked for a username or password. If it works, your SSH key is correctly configured.
+Done
