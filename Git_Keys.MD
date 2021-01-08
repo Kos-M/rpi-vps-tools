@@ -15,7 +15,7 @@ Change directory into the local clone of your repository (if you're not already 
 ```
 git remote set-url origin git@<Custom Host>:username/your-repository.git
 ```
-Edit ~/.ssh/config
+- Edit ~/.ssh/config
 ```
 Host got
   HostName github.com
