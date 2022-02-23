@@ -1,0 +1,11 @@
+# Setup a rpi 
+- SYSTEM_UPGRADE
+- GIT
+- NGINX
+- NODE
+- NODE_VERSION
+- PHP
+- PIHOLE
+- HOSTAPD
+- DOCKER
+- GITEA
