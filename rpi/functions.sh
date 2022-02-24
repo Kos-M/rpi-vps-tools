@@ -46,3 +46,18 @@ function install_node(){
     nvm use "$1"
     node --version
 }
+function install_pihole(){
+    curl -sSL https://install.pi-hole.net | bash
+}
+function install_hostapd(){
+     apt install -y hostapd
+}
+function install_gitea(){
+    if  [ -x "$(command -v  docker-compose )" ]; then
+        log "Installing with docker-compose"
+        cp -r ./gitea "$PLATFORMS_LOCATION/gitea"
+        cd "$PLATFORMS_LOCATION/gitea"
+        dokcker-compose up -d
+        cd -
+    fi
+}
