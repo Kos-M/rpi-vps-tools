@@ -41,7 +41,8 @@ function install_docker(){
 
 function install_node(){
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-    bash 
+    export NVM_DIR=$HOME/.nvm;
+    source $NVM_DIR/nvm.sh; 
     nvm install "$1"
     nvm use "$1"
     node --version
