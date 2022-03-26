@@ -62,3 +62,8 @@ function install_gitea(){
         cd -
     fi
 }
+function install_xfce4(){
+    apt install -y  xserver-xorg xfce4 xfce4-goodies
+    dpkg-reconfigure lightdm
+ #   update-alternatives --config x-session-manager
+}

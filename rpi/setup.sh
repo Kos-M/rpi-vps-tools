@@ -46,3 +46,7 @@ if [ "$DOCKER" == "Y" ] ; then
     log "Installing docker and docker-compose.."
     install_docker
 fi
+if [ "$XFCE4" == "Y" ] ; then
+    log "Installing xfce desktop environment.."
+    install_xfce4
+fi
